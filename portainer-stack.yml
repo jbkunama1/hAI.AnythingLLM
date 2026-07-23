@@ -1,0 +1,14 @@
+services:
+  anythingllm:
+    image: mintplexlabs/anythingllm:latest
+    container_name: anythingllm
+    hostname: anythingllm
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      STORAGE_DIR: /app/server/storage
+      HOST: 0.0.0.0
+      PORT: 3001
+    volumes:
+      - /opt/hAI.AnythingLLM/storage:/app/server/storage

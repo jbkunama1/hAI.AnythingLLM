@@ -1,0 +1,10 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="hAIAnythingLLM logo">
+  <rect width="1200" height="320" rx="36" fill="#F8FAFC"/>
+  <rect x="36" y="36" width="248" height="248" rx="32" fill="#0F172A"/>
+  <path d="M96 206V114H120V150H164V114H188V206H164V170H120V206H96Z" fill="#E2E8F0"/>
+  <path d="M220 206L186 114H210L218 138H255L263 114H287L253 206H220ZM224 158H249L236.5 128L224 158Z" fill="#60A5FA"/>
+  <path d="M306 114H330V206H306V114Z" fill="#93C5FD"/>
+  <text x="340" y="145" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="800" letter-spacing="-2">hAI</text>
+  <text x="470" y="145" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="700" letter-spacing="-2">AnythingLLM</text>
+  <text x="342" y="205" fill="#64748B" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Docker · Portainer · Self-Hosted Workspace</text>
+</svg>

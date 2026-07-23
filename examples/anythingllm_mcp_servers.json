@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "github-readonly": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer YOUR_GITHUB_PAT",
+        "X-MCP-Readonly": "true"
+      },
+      "disabled": false,
+      "alwaysAllow": []
+    },
+    "github-write": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer YOUR_GITHUB_PAT"
+      },
+      "disabled": true,
+      "alwaysAllow": []
+    }
+  }
+}

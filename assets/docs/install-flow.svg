@@ -1,0 +1,31 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Installationsgrafik für hAI.AnythingLLM">
+  <rect width="1600" height="520" rx="28" fill="#F8FAFC"/>
+  <text x="70" y="80" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">hAI.AnythingLLM · Installationsfluss</text>
+  <g>
+    <rect x="70" y="150" width="320" height="220" rx="24" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="100" y="205" fill="#1D4ED8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">1. Clone</text>
+    <text x="100" y="255" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Repository klonen</text>
+    <text x="100" y="305" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">git clone ...</text>
+  </g>
+  <g>
+    <rect x="440" y="150" width="320" height="220" rx="24" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="470" y="205" fill="#1D4ED8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">2. Storage</text>
+    <text x="470" y="255" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Ordner + Rechte setzen</text>
+    <text x="470" y="305" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">mkdir / chown / chmod</text>
+  </g>
+  <g>
+    <rect x="810" y="150" width="320" height="220" rx="24" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="840" y="205" fill="#1D4ED8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">3. Start</text>
+    <text x="840" y="255" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Docker oder Portainer</text>
+    <text x="840" y="305" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">docker compose up -d</text>
+  </g>
+  <g>
+    <rect x="1180" y="150" width="320" height="220" rx="24" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="1210" y="205" fill="#1D4ED8" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">4. MCP + LLM</text>
+    <text x="1210" y="255" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Provider anbinden</text>
+    <text x="1210" y="305" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">LLM + MCP konfigurieren</text>
+  </g>
+  <path d="M390 260H438" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M760 260H808" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1130 260H1178" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+</svg>

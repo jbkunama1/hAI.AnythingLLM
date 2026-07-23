@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hAI.AnythingLLM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --text: #111827;
+      --muted: #4b5563;
+      --line: #dbe3ec;
+      --primary: #1d4ed8;
+      --radius: 18px;
+      --shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(180deg, #f8fafc 0%, #eef4ff 100%); color: var(--text); line-height: 1.6; }
+    .container { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 24px 0; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:16px; background:rgba(255,255,255,0.82); border:1px solid var(--line); backdrop-filter:blur(12px); border-radius:999px; padding:12px 18px; box-shadow:var(--shadow); }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:-0.03em; }
+    .brand img { width:48px; height:48px; border-radius:12px; border:1px solid var(--line); background:white; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:12px 18px; border-radius:999px; border:1px solid var(--line); background:#fff; text-decoration:none; color:var(--text); font-weight:600; }
+    .btn-primary { background:var(--primary); border-color:var(--primary); color:#fff; }
+    .hero { padding:56px 0 28px; }
+    .hero-grid { display:grid; grid-template-columns:1.2fr 0.8fr; gap:28px; align-items:stretch; }
+    .panel { background:rgba(255,255,255,0.86); border:1px solid var(--line); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow); }
+    .eyebrow { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:#dbeafe; color:#1e3a8a; font-size:13px; font-weight:700; margin-bottom:18px; }
+    h1 { margin:0 0 16px; font-size:clamp(2.3rem,5vw,4.6rem); line-height:0.98; letter-spacing:-0.06em; }
+    h2 { margin-top:0; }
+    .lead { color:var(--muted); font-size:1.05rem; max-width:62ch; margin-bottom:24px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; }
+    .stack-list { display:grid; gap:14px; }
+    .stack-item { background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px; }
+    .section { padding:20px 0 56px; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { background:rgba(255,255,255,0.9); border:1px solid var(--line); border-radius:18px; padding:22px; box-shadow:0 10px 24px rgba(15, 23, 42, 0.05); }
+    .code { margin-top:10px; background:#0f172a; color:#e5eefc; padding:18px; border-radius:16px; overflow:auto; font-size:14px; }
+    footer { padding:28px 0 60px; color:var(--muted); font-size:14px; }
+    @media (max-width:920px){ .hero-grid,.cards{grid-template-columns:1fr;} .nav{border-radius:24px; flex-direction:column; align-items:flex-start;} }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="brand">
+        <img src="./assets/hAIAnythingLLM-logo.svg" alt="hAI.AnythingLLM Logo" width="48" height="48" />
+        <span>hAI.AnythingLLM</span>
+      </div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="https://github.com/jbkunama1/hAI.AnythingLLM" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+        <a href="#install" class="btn btn-primary">Installation</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="panel">
+          <div class="eyebrow">Self-Hosted · Docker · Portainer</div>
+          <h1>hAI.AnythingLLM</h1>
+          <p class="lead">Sauberes Repository für AnythingLLM mit Docker Compose, Portainer-Stack, persistenter Storage-Struktur, Dokumentation und vorbereiteter Projektseite für den schnellen Upload nach GitHub.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#install">Jetzt installieren</a>
+            <a class="btn" href="https://github.com/jbkunama1/hAI.AnythingLLM" target="_blank" rel="noopener noreferrer">Repository öffnen</a>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="stack-list">
+            <div class="stack-item"><strong>Compose</strong><br>Startet AnythingLLM lokal mit persistentem Storage unter <code>./storage</code>.</div>
+            <div class="stack-item"><strong>Portainer</strong><br>Stack-Datei mit Host-Pfad <code>/opt/hAI.AnythingLLM/storage</code>.</div>
+            <div class="stack-item"><strong>Troubleshooting</strong><br>Hinweise für Rechteprobleme, SQLite-Fehler und UI-Fehler wie „Failed to fetch“.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section container" id="install">
+      <div class="cards">
+        <article class="card">
+          <h2>1. Repository</h2>
+          <p>Repository klonen und in das Projektverzeichnis wechseln.</p>
+          <div class="code"><code>git clone https://github.com/jbkunama1/hAI.AnythingLLM.git<br>cd hAI.AnythingLLM</code></div>
+        </article>
+        <article class="card">
+          <h2>2. Storage</h2>
+          <p>Datenverzeichnis anlegen und die korrekten Rechte setzen.</p>
+          <div class="code"><code>mkdir -p ./storage<br>sudo chown -R 1000:1000 ./storage<br>chmod -R 775 ./storage</code></div>
+        </article>
+        <article class="card">
+          <h2>3. Start</h2>
+          <p>AnythingLLM mit Docker Compose oder per Portainer Stack starten.</p>
+          <div class="code"><code>docker compose up -d</code></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="container">hAI.AnythingLLM · vorbereitet für GitHub Upload, Docker Compose und Portainer.</footer>
+</body>
+</html>
